@@ -29,7 +29,7 @@ A line beginning with `PROCEDURE execute_create_index(...)` **defines** the help
 
 Some shorter names predate this change. In this package, `idx_` marks an index argument, `l_` marks a local variable, and `uq_` identifies an unquoted name used to look up metadata. The public template constants start with `C_`. DDL means *data definition language*, the SQL statements that create or alter database objects. Thus `index_ddl` holds SQL text, while `supplied` holds the validated JSON options. A suffix such as `_sql` identifies text suitable for a SQL statement.
 
-[Public specification](../admin/dbmsvector.sql) · [Package body](../src/server/dict/plsicds/prvtvector.sql)
+Public specification: ../admin/dbmsvector.sql · Package body: ../src/server/dict/plsicds/prvtvector.sql
 
 ## What changed and why
 
@@ -150,4 +150,4 @@ The existing sanity suite provides examples of flat calls and their expected res
 
 Offline verification covered specification/body signature matching, all four templates, and five create-statement assembly cases. Oracle's PL/SQL wrapper processed both source files. Package compilation against the database catalog and live rebuild behavior still need verification in the development database.
 
-[Existing sanity SQL](../../tkmain_1/tkvc/sql/tkdbcvdbpck_sanity.sql) · [Expected output](../../tkmain_1/tkvc/log/tkdbcvdbpck_sanity.log)
+Existing sanity SQL: ../../tkmain_1/tkvc/sql/tkdbcvdbpck_sanity.sql · Expected output: ../../tkmain_1/tkvc/log/tkdbcvdbpck_sanity.log
